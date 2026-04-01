@@ -6,6 +6,7 @@ import { LinkIcon, BarChart2, Scissors } from 'lucide-react'
 // Main Application Component
 function App() {
   // State to toggle between the 'Shorten' form and the 'Analytics' panel
+  
   const [activeTab, setActiveTab] = useState('shorten')
 
   return (
