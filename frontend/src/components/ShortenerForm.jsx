@@ -26,7 +26,7 @@ const ShortenerForm = () => {
 
     try {
       // Send a POST request to our Express backend
-      const response = await axios.post(`${API_URL}/shorten`, {
+      const response = await axios.post(`${API_URL}/api/url/shorten`, {
         originalUrl,
         customAlias,
         expiresInDays: expiresInDays ? parseInt(expiresInDays) : null
