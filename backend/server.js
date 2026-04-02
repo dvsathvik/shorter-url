@@ -23,6 +23,11 @@ app.use(express.json());
 // (e.g., our shorten route becomes: POST domain.com/api/url/shorten)
 app.use('/api/url', urlRoutes);
 
+// verifying
+app.get('/',(req,res)=>{
+  res.send('Hello World!')
+})
+
 // --- THE CORE REDIRECT ENDPOINT ---
 // We place this at the root ('/') so our short links look as short as possible!
 // e.g. https://my-shortener.com/x7Bd9Q
